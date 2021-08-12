@@ -1,9 +1,12 @@
 {
   "name": "PORTAFOLIO",
   "version": "1.0.0",
-  "description": "",
+  "description": "http://smallma876.github.io/PORTAFOLIO",
   "main": "index.js",
+  "homepage":"",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.config.js",
     "build": "webpack --mode production --config webpack.config.js"
@@ -26,6 +29,7 @@
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "sass": "^1.37.2",
