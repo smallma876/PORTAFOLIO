@@ -1,0 +1,26 @@
+$base-color: #1a1d27;
+$font-color: #fefefe;
+$font-color-secondary: #fdcd77;
+
+.navbar-lateral{
+
+    color: $font-color;
+
+    &__list{
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list li{
+       text-decoration: none;
+     
+    }
+
+    &__list a{
+        text-decoration: none;
+        color: $font-color;
+        /* font-family: 'Amatic SC', cursive; */
+        font-family: 'Josefin Sans', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */
+     }
+}

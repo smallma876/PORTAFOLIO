@@ -1,0 +1,14 @@
+$base-color: #1a1d27;
+$font-color: #fefefe;
+$font-color-secondary: #fdcd77;
+
+
+body{
+    background: $base-color;
+}
+
+#app{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}

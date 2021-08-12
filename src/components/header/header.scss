@@ -1,0 +1,121 @@
+
+$base-color: #1a1d27;
+$font-color: #fefefe;
+$font-color-secondary: #fdcd77;
+/**"Haas Grot Text R Web" - 400*/
+
+.header{
+
+    &__icons{
+        padding: 10px;
+        background: #1a1d27;
+    }
+
+    color: $font-color;
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list .header__li{
+       text-decoration: none;
+       height: 37px;
+       display: flex;
+       align-items: center;
+       padding: 0 20px;
+       color: $base-color;
+    }
+
+    &__list .header__li:hover{
+        background: $base-color;
+        color: $font-color;
+     }
+
+    &__list a{
+        text-decoration: none;
+        font-weight: bold;
+        color: inherit;
+        /* font-family: 'Amatic SC', cursive; */
+        font-family: 'Josefin Sans', sans-serif;
+        /* font-family: 'Roboto', sans-serif; */ 
+    }
+
+    &__navbar{
+        background: $font-color-secondary;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 130px;
+        padding: 10px 0;
+        left: -100%;
+        transition: 700ms;
+        z-index: 1000;
+    }
+
+    &__navbar.header--active{
+        left:0px; 
+    }
+
+    &__open-icon{
+        fill: #FFF !important;
+    }
+
+    &__close-icon{
+        fill: black !important;
+    }
+
+    &__close-icon:hover{
+        fill: white !important;
+    }
+
+    &__close{
+        padding: 0 20px;
+    }
+     
+}
+
+@media (min-width:768px) {
+    .header{
+        &__navbar{
+        
+            position: static;
+            top: auto;
+            height: auto;
+            width: auto;
+            padding: 0;
+            left: auto;
+            transition: 700ms;
+            z-index: auto;
+        }
+    
+        &__navbar.header--active{
+            left:auto; 
+        }
+    
+        &__list{
+            display: grid;
+            grid-auto-flow: column;
+        }
+    
+        &__list .header__li{
+            text-decoration: none;
+            height: auto;
+            display: auto;
+            align-items: inherit;
+            padding: 0;
+            color: $base-color;
+         }
+    
+         &__list a{
+            height: 50px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+        }
+
+    }
+    
+}
