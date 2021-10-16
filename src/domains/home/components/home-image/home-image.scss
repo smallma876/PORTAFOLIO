@@ -1,0 +1,15 @@
+.homeimage{
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+@media (min-width: '768px') {
+    .homeimage{
+        
+        width: 400px;
+            
+    }
+    
+}
+

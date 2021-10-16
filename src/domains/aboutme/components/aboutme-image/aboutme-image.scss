@@ -1,0 +1,19 @@
+.aboutmeimage{
+
+   
+        width: 200px;
+        border-radius: 50%;
+        align-self: center;
+        justify-self: center;
+        filter: revert;
+   
+}
+
+@media (min-width: '768px') {
+    .aboutmeimage{
+        
+        width: 400px;
+            
+    }
+    
+}

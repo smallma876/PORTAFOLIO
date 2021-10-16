@@ -1,0 +1,23 @@
+.aboutmeinformation{
+
+    display: grid;
+
+    &__text{
+        width: 70%;
+        color: #FFF;
+        justify-self: center;
+        padding-top: 5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: '1024px') {
+    .aboutmeinformation{
+        &__text{
+           
+            padding-top: 0; 
+        }
+
+    }
+    
+}

@@ -1,0 +1,69 @@
+$base-color: #1a1d27;
+$font-color: #fefefe;
+$font-color-secondary: #fdcd77;
+$font-color-hover: #f50057;
+
+.homeinformation{
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+
+    &__name{
+        font-size: 4rem;
+        color: $font-color;
+        margin: 0;
+    }
+
+    &__skills{
+        font-size: 2rem;
+    }
+
+    &__socialnetwork{
+        color: $font-color;
+        justify-content: center;
+        display: grid;
+    }
+
+    &__list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__link{
+        color: $font-color;
+    }
+
+    &__link:hover{
+        color: $font-color-hover;
+    }
+}
+
+@media (min-width: '768px') {
+    .homeinformation{
+
+        align-self: flex-start;
+
+        &__skills{
+            font-size: 4rem;
+        }
+
+        &__name{
+            font-size: 7rem;
+            
+        }
+
+    }
+    
+}
+
+
+@media (min-width: '1024px') {
+    .homeinformation{
+
+        align-self: center;
+    
+    }
+    
+}
